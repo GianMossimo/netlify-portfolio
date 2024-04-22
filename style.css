@@ -54,13 +54,10 @@ nav .name a {
 /* Hover Properties */
 a:hover {
     color: #4C155E;
-    font-size: 1.1rem;
 }
 
 nav .name a:hover {
     color: #4C155E;
-    padding: 0.5rem;
-    font-size: 1.7rem;
     cursor: pointer;
 }
 
