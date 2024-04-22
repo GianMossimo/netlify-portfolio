@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gian Saccomanno Portfolio</title>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar">
+        <div class="name">
+            <h1><a href="https://www.linkedin.com/in/gian-saccomanno/" target="_blank">Gian Saccomanno</a></h1>
+        </div>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="hamburger" onclick="openMenu()"><i class='bx bx-menu'></i></i></button>
+    </nav>
+    <!--Main Section-->
+    <section id="main" class="main">
+        <div class="main">
+            <img src="/Images/No Background.jpg"/>
+        </div>
+        <div class="about-me">
+            <p class="about-me">Hello! I'm <span class="span">Gian Saccomanno, </span>a Front End Developer from Alabama</p>
+        </div>
+    </section>
+    <!--Hire Button-->
+    <div class="btn-div">
+        <a href="#contact"><button class="btn">Contact Me</button></a>
+    </div>
+    <!--About Me-->
+    <section id="about">
+        <div id="about" class="description">
+            <h2 class="about-header">About Me</h2>
+            <p>My name is Gian Saccomanno. I graduated from UNC-Charlotte in May of 2021 with a Bachelor's of Science. In my free time I enjoy working out, cooking with my wife, and playing video games.</p>
+        </div>
+    </section>
+    <!--Skills Section-->
+    <div class="skill-header">
+        <h1 id="skills">Skills</h1>
+    </div>
+    <section id="skills">
+        <div class="lang" class="css">
+            <h4>CSS</h4>
+            <div class="icon"><i class='bx bxl-css3'></i></div>
+        </div>    
+        <div class="lang">
+            <h4>Javascript</h4>
+            <div class="icon"><i class='bx bxl-javascript' ></i></box-icon></div> 
+        </div>
+        <div class="lang">
+            <h4>HTML</h4>
+            <div class="icon"><i class='bx bxl-html5'></i></div>
+        </div>
+    </section>
+    <!--Portfolio Section-->
+    <section id="portfolio">
+        <div class="port-header">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="projects">
+            <h2>Projects I Have Worked On</h2>
+        </div>
+    </section>
+    <!--Contact-->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form action="https://formspree.io/f/mbjnjwwp" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea rows="5" cols="60" name="text" placeholder="Enter Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <!--Socials-->
+    <section class="socials">
+        <div class="socials-icon">
+            <div class="icon"><a href="https://www.linkedin.com/in/gian-saccomanno/" target="_blank"><i class='bx bxl-linkedin'></i></a></div>
+        </div>
+        <div class="socials-icon">
+            <div class="icon"><a href="https://github.com/GianMossimo" target="_blank"><i class='bx bxl-github'></i></a></div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>  
+    </footer>
+    <!--JS Section-->
+    <script src="script.js"></script>
+</body>
+</html>

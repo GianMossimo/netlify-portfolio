@@ -1,0 +1,868 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Sizing and Behavior */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Menu */
+nav .name a {
+    display: flex;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F6F2F7;
+    margin-left: 2rem;
+    padding: 0.8rem;
+}
+
+nav {
+    display: flex;
+    z-index: 20;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B27AC4;
+    box-shadow: 0 5px 20px 10px rgba(170, 110, 165, 0.15);
+}
+
+nav li {
+    list-style: none;
+}
+
+a,
+nav .name a {
+    list-style: none;
+    text-decoration: none;
+    color: #F6F2F7;
+    font-weight: bold;
+    transition: all ease-in 0.3s;
+}
+
+/* Hover Properties */
+a:hover {
+    color: #4C155E;
+    font-size: 1.1rem;
+}
+
+nav .name a:hover {
+    color: #4C155E;
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* Button */
+nav button {
+    display: none;
+    padding: 0.8rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+nav button:hover {
+    padding: 0.7rem;
+}
+
+nav button i {
+    color: #F6F2F7;
+    font-size: 3rem;
+    transition: all ease-in-out 0.3s;
+}
+
+nav button i:hover {
+    font-size: 3.2rem;
+    color: #4C155E;
+}
+
+nav button i:active {
+    color: #F6F2F7;
+}
+
+nav button #hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    color: #F6F2F7;
+}
+
+/* Positioning for Navigation */
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem;
+    padding: 0.5rem;
+    gap: 40px;
+}
+
+/* Main Section */
+.main {
+    z-index: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #F6F2F7;
+    height: 450px;
+}
+
+.main img {
+    display: flex;
+    height: 16rem;
+    width: auto;
+    margin-top: 7rem;
+    border-radius: 50%;
+    border: 2px solid #B27AC4;
+    justify-content: center;
+    align-content: center;
+    background: none;
+    transition: all ease-in 0.3s;
+}
+
+.main img:hover {
+    transform: scale(1.1);
+}
+
+/* Self Description/Main Section */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-bottom: 0rem;
+    margin-right: 3rem;
+}
+
+.span {
+    color: #7C3D91;
+    transition: all ease-in 0.3s;
+}
+
+.span:hover {
+    color: #B27AC4;
+    padding: 1rem;
+}
+
+.about-me span,
+.about-me p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Hire Me Button Styling */
+.btn-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #F6F2F7;
+    margin-top: 0;
+    height: 6rem;
+}
+
+.btn-div .btn {
+    background-color: #B27AC4;
+    color: #F6F2F7;
+    padding: 0.75rem;
+    margin-bottom: 3.5rem;
+    border-radius: 1rem;
+    border: 1px solid #B27AC4;
+    font-weight: 700;
+    transition: all ease-in 0.3s;
+}
+
+.btn:hover {
+    background-color: #4C155E;
+    color: #F6F2F7;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #B27AC4;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* About Me */
+#about {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    height: 20rem;
+    background-color: #B27AC4;
+}
+
+#about .description {
+    line-height: 2rem;
+}
+
+.about-header {
+    color: #4C155E;
+    margin-top: 4.5rem;
+    font-size: 3rem;
+    padding: 1.2rem;
+}
+
+#about .description p {
+    margin: 2rem 16rem;
+    font-size: 1.2rem;
+    color: #F6F2F7;
+    font-weight: 600;
+    transition: all ease-in-out 0.5s;
+}
+
+#about .description p:hover {
+    margin: 0.9rem 15.2rem;
+    font-size: 1.25rem;
+}
+
+/* Skills Section */
+.skill-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #B27AC4;
+    color: #4C155E;
+}
+
+.skill-header h1 {
+    font-size: 3rem;
+}
+
+#skills {
+    display: flex;
+    height: 14rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: #B27AC4;
+}
+
+.lang,
+.icon {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    color: #F6F2F7;
+}
+
+.lang {
+    padding: 1rem 2rem 4rem;
+    margin-bottom: 3rem;
+}
+
+.lang h4 {
+    font-size: 2rem;
+    color: #4C155E;
+}
+
+.lang .icon {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    background-color: #4C155E;
+    transition: all ease-in-out 0.3s;
+}
+
+.icon i {
+    font-size: 5rem;
+    transition: all ease-in-out 0.05s;
+}
+
+.icon i:hover,
+.lang .icon:hover {
+    font-size: 5.2rem;
+    cursor: pointer;
+    color: #B27AC4;
+    padding: 3.5rem;
+}
+
+/* Porftolio Section */
+#portfolio {
+    height: 36rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #F6F2F7;
+    color: #4C155E;
+}
+
+.port-header {
+    margin-top: 4rem;
+}
+
+.port-header h1 {
+    font-size: 3rem;
+}
+
+.projects h2 {
+    font-size: 2rem;
+}
+
+.projects {
+    margin-top: 3rem;
+}
+
+/* Contact Form */
+#contact {
+    height: 28.15rem;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #4C155E;
+    color: #F6F2F7;
+}
+
+#contact h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+#contact form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#contact form input {
+    background-color: #7C3D91;
+    color: #F6F2F7;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    border: solid 1px transparent;
+    padding: 0.4rem;
+    transition: all ease-in 0.3s;    
+}
+
+#contact form input:hover {
+    background-color: #4C155E;
+    color: #F6F2F7;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid #4C155E;
+    font-weight: 800;
+    cursor: pointer;
+    border-bottom: solid 2px #B27AC4;
+}
+
+#contact form input:focus-within {
+    outline: none;
+    border-bottom: solid 2px #B27AC4;
+}
+
+#contact form textarea {
+    background-color: #7C3D91;
+    color: #F6F2F7;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    border: solid 1px transparent;
+    padding: 0.5rem;
+    transition: all ease-in 0.3s;
+}
+
+#contact form textarea:hover {
+    background-color: #4C155E;
+    color: #F6F2F7;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid #4C155E;
+    font-weight: 800;
+    cursor: pointer;
+    border-bottom: solid 2px #B27AC4;
+}
+
+#contact form textarea:focus-within {
+    outline: none;
+    border-bottom: solid 2px #B27AC4;
+    background-color: #4C155E;
+}
+
+#contact form button {
+    background-color: #B27AC4;
+    color: #F6F2F7;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #B27AC4;
+    font-weight: 700;
+    transition: all ease-in 0.3s;    
+}
+
+#contact form button:hover {
+    background-color: #4C155E;
+    color: #B27AC4;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #4C155E;
+    font-weight: 800;
+    cursor: pointer;    
+}
+
+/* Socials */
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 5rem;
+    gap: 2rem;
+    background-color: #4C155E;
+}
+
+.socials-icon i {
+    margin-top: 0.7rem;
+    font-size: 3rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.socials-icon i:hover {
+    font-size: 3.4rem;
+    cursor: pointer;
+    color: #B27AC4;
+    padding: 0.05rem;
+}
+
+/* Footer */
+.footer nav {
+    justify-content: center;
+    background-color: #4C155E;
+    box-shadow: none;
+    height: 4rem;
+}
+
+.footer nav ul {
+    margin-bottom: 3.5rem;
+}
+
+.footer nav a:hover {
+    color: #B27AC4;
+}
+
+/* Responsive Styles */
+
+/* iPad Air 820x1180 */
+@media only screen and (max-width: 850px) {
+
+    /* JS Menu Button */
+
+    nav .name a {
+        font-size: 1.2rem;
+    }   
+
+    nav ul {
+        display: none;
+        margin-right: 0;
+        padding: 0rem;
+        gap: 30px;
+    }
+
+    nav.open h1 {
+        display: none;
+    }
+
+    nav.open ul {
+        display: flex;
+    }
+
+    nav button#hamburger {
+        display: flex;
+    }
+
+    .main {
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 550px;
+    }
+
+    .main img {
+        margin-bottom: 1rem;
+    }
+
+    .about-me {
+        margin: 0 auto;
+    }
+
+    .about-me p {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }  
+    
+    .about-me span {
+        font-size: 2rem;
+    }
+
+    .span:hover {
+        padding: 0.5rem;
+    }
+
+    .btn-div {
+        height: 2rem;
+    }
+    
+    .btn-div .btn {
+        margin-bottom: 5.5rem;
+    } 
+
+    #about {
+        flex-flow: column;
+        padding: 0rem;
+        height: 15rem;
+    }
+    
+    .about-header {
+        margin-top: 4.5rem;
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    
+    #about .description p {
+        margin: 1rem 6rem;
+    }
+    
+    #about .description p:hover {
+        margin: 0.9rem 5.5rem;
+        font-size: 1.25rem;
+    }
+    
+    .skill-header {
+        font-size: 2.5rem;
+    }
+    
+    #skills {
+        height: 13rem;
+        gap: 2rem;
+    }
+    
+}
+
+/* iPad Pro */
+@media only screen and (max-width: 1125px) and (min-width: 851px) {
+
+    /* JS Menu Button */
+
+    nav .name a {
+        font-size: 1.2rem;
+    }   
+
+    nav ul {
+        display: none;
+        margin-right: 0;
+        padding: 0rem;
+        gap: 30px;
+    }
+
+    nav.open h1 {
+        display: none;
+    }
+
+    nav.open ul {
+        display: flex;
+    }
+
+    nav button#hamburger {
+        display: flex;
+    }
+
+    .main {
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+    }
+
+    .main img {
+        margin-bottom: 10rem;
+    }
+
+    .about-me {
+        margin: 0 auto;
+    }
+
+    .about-me p {
+        margin-top: 2rem;
+        margin-bottom: 6rem;
+    }  
+
+    .btn-div {
+        height: 2rem;
+    }
+    
+    .btn-div .btn {
+        margin-top: 2rem;
+        margin-bottom: 6rem;
+    } 
+
+    #about {
+        flex-flow: column;
+        padding: 0rem;
+        height: 15rem;
+    }
+    
+    .about-header {
+        margin-top: 4.5rem;
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    
+    #about .description p {
+        margin: 1rem 6rem;
+    }
+    
+    #about .description p:hover {
+        margin: 0.9rem 5.5rem;
+        font-size: 1.25rem;
+    }
+    
+}
+
+/* Miscellaneous */
+@media only screen and (max-width: 750px) {
+
+    /* JS Menu Button */
+
+    nav .name a {
+        display: none;
+    }   
+
+    nav {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    nav.open h1 {
+        display: none;
+    }
+
+    nav.open ul {
+        display: flex;
+        flex-flow: column-reverse;
+        padding: 1rem;
+    }
+
+    nav button#hamburger {
+        display: flex;
+        font-size: 2rem;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0.4rem;
+        gap: 5px;
+    }
+
+    nav ul li {
+        font-size: 2px;
+    }
+
+    .skill-header {
+        padding: 2rem;
+    }
+
+}
+
+/* iPhone 14 Pro Max */
+@media only screen and (max-width: 550px) and (min-width: 360px) {
+
+    /* JS Menu Button */
+
+    nav .name a {
+        display: none;
+    }   
+
+    nav {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    nav.open h1 {
+        display: none;
+    }
+
+    nav.open ul {
+        display: flex;
+        flex-flow: column-reverse;
+        padding: 1rem;
+    }
+
+    nav button#hamburger {
+        display: flex;
+        font-size: 2rem;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0.4rem;
+        gap: 5px;
+    }
+
+    nav ul li {
+        font-size: 2px;
+    }
+
+    .main {
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+    }
+
+    .main img {
+        height: 10rem;
+        margin-top: 6rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .about-me {
+        margin: 0 auto;
+    }
+
+    .about-me p {
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+    }  
+    
+    .about-me span {
+        font-size: 1rem;
+    }
+
+    .span:hover {
+        padding: 0.5rem;
+    }
+
+    .btn-div {
+        height: 2rem;
+    }
+    
+    .btn-div .btn {
+        margin-bottom: 5.5rem;
+    } 
+
+    #about {
+        flex-flow: column;
+        padding: 0rem;
+        height: 23rem;
+    }
+    
+    .about-header {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    #about .description p {
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
+    
+    #about .description p:hover {
+        font-size: 1.05rem;
+        margin: 0.9rem 1.8rem;
+    }
+    
+    .skill-header {
+        flex-flow: column;
+        height: 14rem;
+    }
+
+    .skill-header h1 {
+        font-size: 2rem;
+    }
+    
+    #skills {
+        display: flex;
+        flex-flow: column;
+        height: 43rem;
+        gap: 0rem;
+    }
+
+    .lang h4 {
+        font-size: 1.8rem;
+    }
+    
+    .lang {
+        padding: 0.8rem 1.5rem 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .port-header h1 {
+        font-size: 2rem;
+    }
+    
+    .projects h2 {
+        font-size: 1.8rem;
+    }
+
+    #contact form textarea {
+        padding: 0.5rem;
+        width: 90%;
+    }
+    
+}
+
+/* iPhone SE */
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+
+    /* JS Menu Button */
+
+    nav .name a {
+        display: none;
+    }    
+
+    nav {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    nav.open h1 {
+        display: none;
+    }
+
+    nav.open ul {
+        display: flex;
+        flex-flow: column-reverse;
+        padding: 1rem;
+    }
+
+    nav button#hamburger {
+        display: flex;
+        font-size: 2rem;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0.4rem;
+        gap: 5px;
+    }
+
+    nav ul li {
+        font-size: 2px;
+    }
+
+}
