@@ -438,10 +438,8 @@ nav ul {
 }
 
 .socials-icon i:hover {
-    font-size: 3.4rem;
     cursor: pointer;
     color: #B27AC4;
-    padding: 0.05rem;
 }
 
 /* Footer */
