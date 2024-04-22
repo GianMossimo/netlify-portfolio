@@ -434,12 +434,14 @@ nav ul {
 .socials-icon i {
     margin-top: 0.7rem;
     font-size: 3rem;
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.25s;
 }
 
 .socials-icon i:hover {
+    font-size: 3.4rem;
     cursor: pointer;
     color: #B27AC4;
+    padding: 0rem;
 }
 
 /* Footer */
