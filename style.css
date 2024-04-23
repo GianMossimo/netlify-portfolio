@@ -223,11 +223,6 @@ nav ul {
     transition: all ease-in-out 0.5s;
 }
 
-#about .description p:hover {
-    margin: 0.9rem 15.2rem;
-    font-size: 1.25rem;
-}
-
 /* Skills Section */
 .skill-header {
     display: flex;
@@ -319,6 +314,59 @@ nav ul {
 
 .projects {
     margin-top: 3rem;
+}
+
+/* Image Carousel Portfolio */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.carousel::before,
+.carousel::after {
+    position: absolute;
+    top: 0;
+    width: 75px;
+    height: 100%;
+    content: '';
+    z-index: 2;
+}
+
+.carousel::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #F6F2F7);
+}
+
+.carousel::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #F6F2F7);
+}
+
+.carousel:hover .slide {
+    animation-play-state: paused;
+}
+
+.slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+.slide img {
+    height: 10rem;
+    margin: 0 40px;
+    border-radius: 10%;
 }
 
 /* Contact Form */
@@ -727,7 +775,7 @@ nav ul {
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        height: 400px;
+        height: 500px;
     }
 
     .main img {
@@ -765,7 +813,7 @@ nav ul {
     #about {
         flex-flow: column;
         padding: 0rem;
-        height: 23rem;
+        height: 26rem;
     }
     
     .about-header {
@@ -795,7 +843,7 @@ nav ul {
     #skills {
         display: flex;
         flex-flow: column;
-        height: 43rem;
+        height: 58rem;
         gap: 0rem;
     }
 
