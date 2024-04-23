@@ -813,7 +813,7 @@ nav ul {
     #about {
         flex-flow: column;
         padding: 0rem;
-        height: 26rem;
+        height: 30rem;
     }
     
     .about-header {
@@ -833,7 +833,7 @@ nav ul {
     
     .skill-header {
         flex-flow: column;
-        height: 14rem;
+        height: 10rem;
     }
 
     .skill-header h1 {
